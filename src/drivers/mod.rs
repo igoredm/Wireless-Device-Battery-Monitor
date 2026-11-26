@@ -15,6 +15,7 @@ pub mod attackshark;
 pub mod audeze;
 pub mod aula;
 pub mod aula_hub;
+pub mod aula_infortech;
 pub mod aula_mouse;
 pub mod barracuda_chroma;
 pub mod barracuda_x;
