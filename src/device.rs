@@ -360,6 +360,7 @@ pub fn poll_hardware(ids: &[(u16, u16)]) -> Vec<DeviceStatus> {
     drivers::compx::poll(&mut ctx);
     drivers::compx_extra::poll(&mut ctx);
     drivers::aula_mouse::poll(&mut ctx);
+    drivers::aula_infortech::poll(&mut ctx); // Pitwall: AULA "Infortech" receivers 38A6
     drivers::mchose_modern::poll(&mut ctx);
     drivers::ajazz_aj139::poll(&mut ctx);
     drivers::hyperx_core::poll(&mut ctx);
@@ -527,6 +528,7 @@ fn poll_with(colls: Vec<HidColl>) -> Vec<DeviceStatus> {
     drivers::compx::poll(&mut ctx);
     drivers::compx_extra::poll(&mut ctx);
     drivers::aula_mouse::poll(&mut ctx);
+    drivers::aula_infortech::poll(&mut ctx); // Pitwall: AULA "Infortech" receivers 38A6
     drivers::mchose_modern::poll(&mut ctx);
     drivers::ajazz_aj139::poll(&mut ctx);
     drivers::hyperx_core::poll(&mut ctx);
